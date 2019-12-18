@@ -16,7 +16,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.GridLayout;
 import android.widget.ImageView;
+import android.widget.ScrollView;
 import android.widget.TextView;
 
 import java.util.Locale;
@@ -29,6 +31,7 @@ public class MovieFragment extends Fragment {
 
     //
     private Movie movie;
+    private ScrollView myScrollView;
     Boolean isAdmin;
 
     public MovieFragment() {
@@ -70,6 +73,7 @@ public class MovieFragment extends Fragment {
 
         ImageView pic = finalView.findViewById(R.id.fragMovieImage);
         pic.setImageResource(resID);
+        myScrollView = finalView.findViewById(R.id.mScrollView);
         TextView title = finalView.findViewById(R.id.fragMovieTitle);
         title.setText(movie.getMovieName());
         TextView imdb = finalView.findViewById(R.id.fragMovieIMDB);
@@ -85,6 +89,7 @@ public class MovieFragment extends Fragment {
         TextView description = finalView.findViewById(R.id.fragMovieDesc);
         description.setText(movie.getDescription());
         Button book = finalView.findViewById(R.id.btnFragMovieBook);
+        Button bookUp = finalView.findViewById(R.id.up);
         //show button if user is not admin
         if(isAdmin){
             book.setVisibility(View.INVISIBLE);
@@ -99,6 +104,12 @@ public class MovieFragment extends Fragment {
                 }
             });
         }
+        bookUp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                myScrollView.scrollTo(0, 0);
+            }
+        });
         return finalView;
     }
 }

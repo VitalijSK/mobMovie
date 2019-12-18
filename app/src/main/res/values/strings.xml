@@ -45,6 +45,7 @@
 
     <!--MoviesActivity-->
     <string name="btnBookMovie">Show cinema on map</string>
+    <string name="up">Top</string>
     <string name="director">Director:</string>
     <string name="stars">Stars:</string>
     <string name="desc">Description:</string>

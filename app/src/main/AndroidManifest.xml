@@ -42,56 +42,56 @@
         <activity
             android:name=".CustomerServiceActivity"
             android:parentActivityName=".MoviesActivity"
-            android:screenOrientation="sensorPortrait"
+            android:screenOrientation="sensor"
             android:windowSoftInputMode="adjustPan|adjustResize" />
         <activity
             android:name=".TheatreInfoActivity"
             android:parentActivityName=".AreaActivity"
-            android:screenOrientation="sensorPortrait" />
+            android:screenOrientation="sensor" />
         <activity
             android:name=".AreaActivity"
             android:parentActivityName=".MoviesActivity"
-            android:screenOrientation="sensorPortrait" />
+            android:screenOrientation="sensor" />
         <activity
             android:name=".AudienceListActivity"
-            android:screenOrientation="sensorPortrait" />
+            android:screenOrientation="sensor" />
         <activity
             android:name=".AdminViewActivity"
-            android:screenOrientation="sensorPortrait" />
+            android:screenOrientation="sensor" />
         <activity
             android:name=".BookingViewActivity"
             android:parentActivityName=".BookingListActivity"
-            android:screenOrientation="sensorPortrait" />
+            android:screenOrientation="sensor" />
         <activity
             android:name=".CheckOutActivity"
             android:parentActivityName=".BookingInfoActivity"
-            android:screenOrientation="sensorPortrait" />
+            android:screenOrientation="sensor" />
         <activity
             android:name=".BookingInfoActivity"
-            android:screenOrientation="sensorPortrait"
+            android:screenOrientation="sensor"
             android:windowSoftInputMode="adjustPan|adjustResize" />
         <activity
             android:name=".BookingListActivity"
             android:parentActivityName=".MoviesActivity"
-            android:screenOrientation="sensorPortrait" />
+            android:screenOrientation="sensor" />
         <activity
             android:name=".MoviesActivity"
             android:parentActivityName=".MainActivity"
-            android:screenOrientation="sensorPortrait" />
+            android:screenOrientation="sensor" />
         <activity
             android:name=".ProfileActivity"
             android:parentActivityName=".MoviesActivity"
-            android:screenOrientation="sensorPortrait" />
+            android:screenOrientation="sensor" />
         <activity
             android:name=".RegConfirmActivity"
-            android:screenOrientation="sensorPortrait" />
+            android:screenOrientation="sensor" />
         <activity
             android:name=".RegisterActivity"
             android:parentActivityName=".MainActivity"
-            android:screenOrientation="sensorPortrait" />
+            android:screenOrientation="sensor" />
         <activity
             android:name=".MainActivity"
-            android:screenOrientation="sensorPortrait"
+            android:screenOrientation="sensor"
             android:windowSoftInputMode="adjustPan|adjustResize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

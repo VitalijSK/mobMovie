@@ -8,7 +8,6 @@
  * /-->
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/mScrollView"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     tools:context=".MovieFragment">
@@ -47,11 +46,11 @@
 
         <ImageView
             android:id="@+id/fragMovieImage"
-            android:layout_width="wrap_content"
-            android:layout_height="724dp"
+            android:layout_width="match_parent"
+            android:layout_height="650dp"
             android:layout_row="1"
             android:layout_column="0"
-            android:layout_columnSpan="3"
+            android:layout_columnSpan="1"
             android:contentDescription="@string/contDesc"
             android:src="@drawable/m1" />
 
@@ -152,29 +151,15 @@
 
         <Button
             android:id="@+id/btnFragMovieBook"
-            android:layout_width="150dp"
+            android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_row="6"
             android:layout_column="0"
-            android:layout_columnSpan="1"
+            android:layout_columnSpan="3"
             android:layout_margin="20dp"
             android:layout_marginBottom="80dp"
             android:background="@drawable/btn_bottom_right_round"
             android:text="@string/btnBookMovie"
-            android:textColor="@color/textColorPrimary"
-            android:textSize="18sp" />
-
-        <Button
-            android:id="@+id/up"
-            android:layout_width="150dp"
-            android:layout_height="60dp"
-            android:layout_row="6"
-            android:layout_column="1"
-            android:layout_columnSpan="1"
-            android:layout_margin="20dp"
-            android:layout_marginBottom="80dp"
-            android:background="@drawable/btn_bottom_right_round"
-            android:text="@string/up"
             android:textColor="@color/textColorPrimary"
             android:textSize="18sp" />
 
